@@ -274,7 +274,9 @@ const GeneralInfo = ({isDarkMode}) => {
         const {eos_stat, staked, chain, global_data, cmc, table_rows} = data;
         if (eos_stat && staked && chain && global_data && cmc && table_rows) {
           eos_total_supply = Number(eos_stat.rows[0].supply.split(' ')[0]);
+
           total_staked = Number(staked.data[0].split(' ')[0]);
+
           head_block_num = Number(chain.head_block_num);
           head_block_time = convertUTCDateToLocalDate(new Date(chain.head_block_time));
 

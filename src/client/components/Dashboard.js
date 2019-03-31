@@ -46,9 +46,9 @@ class Dashboard extends Component {
               </Suspense>
             </div>
             <div className="col col-12 col-sm-12 col-md-12 col-l-7 col-xl-4 history-col pd-col ">
-              <Suspense fallback={<div> Loading... </div>}>
+              {/* <Suspense fallback={<div> Loading... </div>}>
                 <TokenMarket isDarkMode={sidebar.isDarkMode} />
-              </Suspense>
+              </Suspense> */}
               <Suspense fallback={<div> Loading... </div>}>
                 <Producers limit="21" isDarkMode={sidebar.isDarkMode} />
               </Suspense>
@@ -70,9 +70,9 @@ class Dashboard extends Component {
               </Suspense>
               {/* <TokenMarket display="d-xl-none" isDarkMode={sidebar.isDarkMode} />
             <Producers limit="30" display="d-xl-none" isDarkMode={sidebar.isDarkMode} /> */}
-              <Suspense fallback={<div> Loading... </div>}>
+              {/* <Suspense fallback={<div> Loading... </div>}>
                 <TokenMarket isDarkMode={sidebar.isDarkMode} />
-              </Suspense>
+              </Suspense> */}
               <Suspense fallback={<div> Loading... </div>}>
                 <Producers limit="21" isDarkMode={sidebar.isDarkMode} />
               </Suspense>

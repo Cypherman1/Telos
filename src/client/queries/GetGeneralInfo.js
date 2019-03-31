@@ -2,12 +2,12 @@ import gql from 'graphql-tag';
 
 export default gql`
   query general_info {
-    eos_stat(json: "true", code: "eosio.token", scope: "EOS", table: "stat", limit: "10") {
+    eos_stat(json: "true", code: "eosio.token", scope: "TLOS", table: "stat", limit: "10") {
       rows {
         supply
       }
     }
-    staked: currency_balance(code: "eosio.token", account: "eosio.stake", symbol: "EOS") {
+    staked: currency_balance(code: "eosio.token", account: "eosio.stake", symbol: "TLOS") {
       data
     }
     chain {
